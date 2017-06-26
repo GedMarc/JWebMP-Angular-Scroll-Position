@@ -8,7 +8,7 @@ import za.co.mmagon.jwebswing.base.angular.directives.AngularDirectiveBase;
  * @author Marc Magon
  * @since 30 May 2017
  */
-public class AngularScrollPositionDirective extends AngularDirectiveBase
+class AngularScrollPositionDirective extends AngularDirectiveBase
 {
 
     private static final long serialVersionUID = 1L;
