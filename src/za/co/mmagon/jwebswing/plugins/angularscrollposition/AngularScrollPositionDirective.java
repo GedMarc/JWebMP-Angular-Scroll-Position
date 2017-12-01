@@ -9,9 +9,9 @@ import za.co.mmagon.jwebswing.base.angular.directives.AngularDirectiveBase;
  */
 class AngularScrollPositionDirective extends AngularDirectiveBase
 {
-	
+
 	private static final long serialVersionUID = 1L;
-	
+
 	/*
 	 * Constructs a new AngularScrollPositionDirective
 	 */
@@ -19,10 +19,10 @@ class AngularScrollPositionDirective extends AngularDirectiveBase
 	{
 		super("AngularScrollPositionDirective");
 	}
-	
+
 	@Override
 	public String renderFunction()
 	{
-		return FileTemplates.getFileTemplate(AngularScrollPositionDirective.class, "scrollPosition.min").toString();
+		return FileTemplates.getFileTemplate(AngularScrollPositionDirective.class, "scrollPosition", "scrollPosition").toString();
 	}
 }
