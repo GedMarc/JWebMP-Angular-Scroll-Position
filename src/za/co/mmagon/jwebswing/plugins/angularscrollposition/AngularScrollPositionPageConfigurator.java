@@ -18,19 +18,20 @@ import za.co.mmagon.jwebswing.plugins.jquery.JQueryPageConfigurator;
 		pluginUniqueName = "jwebswing-angular-scroll-position",
 		pluginVersion = "1.0.0",
 		pluginCategories = "angular,animation,zoom, ui,web ui, framework",
-		pluginSubtitle = "Allows for almost anything to have the zoom in effect attached by simply adding the zoomin class to any element.",
+		pluginSubtitle = "Allows for almost anything to have the zoom in effect attached by simply adding the zoomin class to any " +
+				                 "element.",
 		pluginSourceUrl = "https://www.akveo.com/products.html",
 		pluginWikiUrl = "https://github.com/GedMarc/JWebSwing/Angular-Scroll-Position/wiki",
 		pluginGitUrl = "https://github.com/GedMarc/JWebSwing/Angular-Scroll-Position",
 		pluginIconUrl = "",
 		pluginIconImageUrl = "",
 		pluginOriginalHomepage = "https://www.akveo.com/products.html",
-		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/AngularZoomInAnimation.jar/download"
-)
+		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/AngularZoomInAnimation.jar/download")
 @ComponentInformation(name = "Angular Zoom In",
 		description = "Allows for almost anything to have the zoom in effect attached by simply adding the zoomin class to any element.",
 		url = "https://www.akveo.com/products.html")
-public class AngularScrollPositionPageConfigurator extends PageConfigurator
+public class AngularScrollPositionPageConfigurator
+		extends PageConfigurator
 {
 
 	private static final long serialVersionUID = 1L;
@@ -50,7 +51,6 @@ public class AngularScrollPositionPageConfigurator extends PageConfigurator
 		{
 			JQueryPageConfigurator.setRequired(true);
 			AngularPageConfigurator.setRequired(true);
-			page.getAngular().getAngularDirectives().add(new AngularScrollPositionDirective());
 		}
 		return page;
 	}
