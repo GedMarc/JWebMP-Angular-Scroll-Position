@@ -24,7 +24,7 @@ public class AngularScrollPositionDirective
 	@Override
 	public String renderFunction()
 	{
-		return FileTemplates.getFileTemplate(AngularScrollPositionDirective.class, "scrollPosition", "scrollPosition.min")
+		return FileTemplates.getFileTemplate(AngularScrollPositionDirective.class, "scrollPosition", "scrollPosition.min.js")
 		                    .toString();
 	}
 }
