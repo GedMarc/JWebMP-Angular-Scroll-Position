@@ -2,6 +2,7 @@ package com.jwebmp.plugins.angularscrollposition;
 
 import com.jwebmp.core.FileTemplates;
 import com.jwebmp.core.base.angular.directives.AngularDirectiveBase;
+import com.jwebmp.core.base.angular.services.IAngularDirective;
 
 /**
  * @author Marc Magon
@@ -9,6 +10,7 @@ import com.jwebmp.core.base.angular.directives.AngularDirectiveBase;
  */
 public class AngularScrollPositionDirective
 		extends AngularDirectiveBase
+		implements IAngularDirective<AngularScrollPositionDirective>
 {
 
 	private static final long serialVersionUID = 1L;
