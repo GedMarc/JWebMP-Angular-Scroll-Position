@@ -7,6 +7,7 @@ module com.jwebmp.plugins.angularscrollposition {
 	exports com.jwebmp.plugins.angularscrollposition;
 
 	requires com.jwebmp.core;
+	requires java.validation;
 
 	provides IPageConfigurator with AngularScrollPositionPageConfigurator;
 	provides IAngularDirective with AngularScrollPositionDirective;
