@@ -93,11 +93,8 @@ public class AngularScrollPositionPageConfigurator
 	@Override
 	public Page configure(Page page)
 	{
-		if (!page.isConfigured())
-		{
-			JQueryPageConfigurator.setRequired(true);
-			AngularPageConfigurator.setRequired(true);
-		}
+		JQueryPageConfigurator.setRequired(true);
+		AngularPageConfigurator.setRequired(true);
 		return page;
 	}
 
