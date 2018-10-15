@@ -39,8 +39,8 @@ import javax.validation.constraints.NotNull;
 		pluginCategories = "angular,animation,zoom, ui,web ui, framework",
 		pluginSubtitle = "Allows for almost anything to have the zoom in effect attached by simply adding the zoomin class to any " + "element.",
 		pluginSourceUrl = "https://www.akveo.com/products.html",
-		pluginWikiUrl = "https://github.com/GedMarc/JWebSwing/Angular-Scroll-Position/wiki",
-		pluginGitUrl = "https://github.com/GedMarc/JWebSwing/Angular-Scroll-Position",
+		pluginWikiUrl = "https://github.com/GedMarc/JWebMP/Angular-Scroll-Position/wiki",
+		pluginGitUrl = "https://github.com/GedMarc/JWebMP/Angular-Scroll-Position",
 		pluginIconUrl = "",
 		pluginIconImageUrl = "",
 		pluginOriginalHomepage = "https://www.akveo.com/products.html",
@@ -49,7 +49,7 @@ import javax.validation.constraints.NotNull;
 		description = "Allows for almost anything to have the zoom in effect attached by simply adding the zoomin class to any element.",
 		url = "https://www.akveo.com/products.html")
 public class AngularScrollPositionPageConfigurator
-		implements IPageConfigurator
+		implements IPageConfigurator<AngularScrollPositionPageConfigurator>
 {
 	/**
 	 * If this configurator is enabled
