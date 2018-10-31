@@ -13,7 +13,6 @@ public class AngularScrollPositionDirective
 		implements IAngularDirective<AngularScrollPositionDirective>
 {
 
-	private static final long serialVersionUID = 1L;
 
 	/*
 	 * Constructs a new AngularScrollPositionDirective
