@@ -2,15 +2,13 @@ package com.jwebmp.plugins.angularscrollposition;
 
 import com.jwebmp.core.FileTemplates;
 import com.jwebmp.core.base.angular.directives.AngularDirectiveBase;
-import com.jwebmp.core.base.angular.services.IAngularDirective;
 
 /**
  * @author Marc Magon
  * @since 30 May 2017
  */
 public class AngularScrollPositionDirective
-		extends AngularDirectiveBase
-		implements IAngularDirective<AngularScrollPositionDirective>
+		extends AngularDirectiveBase<AngularScrollPositionDirective>
 {
 
 
