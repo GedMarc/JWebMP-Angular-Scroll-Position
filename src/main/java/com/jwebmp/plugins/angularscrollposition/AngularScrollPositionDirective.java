@@ -4,7 +4,7 @@ import com.jwebmp.core.FileTemplates;
 import com.jwebmp.core.base.angular.directives.AngularDirectiveBase;
 
 /**
- * @author Marc Magon
+ * @author GedMarc
  * @since 30 May 2017
  */
 public class AngularScrollPositionDirective
