@@ -1,11 +1,3 @@
-import com.jwebmp.core.base.angular.services.IAngularDirective;
-import com.jwebmp.core.services.IPageConfigurator;
-import com.jwebmp.guicedinjection.interfaces.IGuiceScanJarExclusions;
-import com.jwebmp.guicedinjection.interfaces.IGuiceScanModuleExclusions;
-import com.jwebmp.plugins.angularscrollposition.AngularScrollPositionDirective;
-import com.jwebmp.plugins.angularscrollposition.AngularScrollPositionPageConfigurator;
-import com.jwebmp.plugins.angularscrollposition.implementations.AngularScrollPositionExclusionsModule;
-
 module com.jwebmp.plugins.angularscrollposition {
 	exports com.jwebmp.plugins.angularscrollposition;
 
@@ -14,9 +6,9 @@ module com.jwebmp.plugins.angularscrollposition {
 	requires com.jwebmp.guicedinjection;
 	requires com.jwebmp.core.angularjs;
 
-	provides IPageConfigurator with AngularScrollPositionPageConfigurator;
-	provides IAngularDirective with AngularScrollPositionDirective;
+	provides com.jwebmp.core.services.IPageConfigurator with com.jwebmp.plugins.angularscrollposition.AngularScrollPositionPageConfigurator;
+	provides com.jwebmp.core.base.angular.services.IAngularDirective with com.jwebmp.plugins.angularscrollposition.AngularScrollPositionDirective;
 
-	provides IGuiceScanModuleExclusions with AngularScrollPositionExclusionsModule;
-	provides IGuiceScanJarExclusions with AngularScrollPositionExclusionsModule;
+	provides com.jwebmp.guicedinjection.interfaces.IGuiceScanModuleExclusions with com.jwebmp.plugins.angularscrollposition.implementations.AngularScrollPositionExclusionsModule;
+	provides com.jwebmp.guicedinjection.interfaces.IGuiceScanJarExclusions with com.jwebmp.plugins.angularscrollposition.implementations.AngularScrollPositionExclusionsModule;
 }
