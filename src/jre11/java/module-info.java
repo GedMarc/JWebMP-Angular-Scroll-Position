@@ -10,5 +10,4 @@ module com.jwebmp.plugins.angularscrollposition {
 	provides com.jwebmp.core.base.angular.services.IAngularDirective with com.jwebmp.plugins.angularscrollposition.AngularScrollPositionDirective;
 
 	provides com.guicedee.guicedinjection.interfaces.IGuiceScanModuleExclusions with com.jwebmp.plugins.angularscrollposition.implementations.AngularScrollPositionExclusionsModule;
-	provides com.guicedee.guicedinjection.interfaces.IGuiceScanJarExclusions with com.jwebmp.plugins.angularscrollposition.implementations.AngularScrollPositionExclusionsModule;
 }
