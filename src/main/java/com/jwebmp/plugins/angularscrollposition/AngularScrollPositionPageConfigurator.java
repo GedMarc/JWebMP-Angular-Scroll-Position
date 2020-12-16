@@ -21,6 +21,7 @@ import com.jwebmp.core.Page;
 import com.jwebmp.core.base.angular.AngularPageConfigurator;
 import com.jwebmp.core.plugins.ComponentInformation;
 import com.jwebmp.core.plugins.PluginInformation;
+import com.jwebmp.core.plugins.PluginStatus;
 import com.jwebmp.core.plugins.jquery.JQueryPageConfigurator;
 import com.jwebmp.core.services.IPageConfigurator;
 
@@ -44,9 +45,14 @@ import jakarta.validation.constraints.NotNull;
 		pluginIconUrl = "",
 		pluginIconImageUrl = "",
 		pluginOriginalHomepage = "https://www.akveo.com/products.html",
-		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/AngularZoomInAnimation.jar/download")
-@ComponentInformation(name = "Angular Zoom In",
-		description = "Allows for almost anything to have the zoom in effect attached by simply adding the zoomin class to any element.",
+		pluginDownloadUrl = "https://sourceforge.net/projects/jwebswing/files/plugins/AngularZoomInAnimation.jar/download",
+		pluginGroupId = "com.jwebmp.plugins.angular",
+		pluginArtifactId = "jwebmp-angular-scroll-position",
+		pluginModuleName = "com.jwebmp.plugins.angularscrollposition",
+		pluginStatus = PluginStatus.Released
+)
+@ComponentInformation(name = "Angular Scroll Position",
+		description = "Places the position of the scroll bar into a client side variable for reading",
 		url = "https://www.akveo.com/products.html")
 public class AngularScrollPositionPageConfigurator
 		implements IPageConfigurator<AngularScrollPositionPageConfigurator>
