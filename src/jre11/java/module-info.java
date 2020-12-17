@@ -7,6 +7,8 @@ module com.jwebmp.plugins.angularscrollposition {
 	requires jakarta.validation;
 	requires com.guicedee.guicedinjection;
 	requires com.jwebmp.core.angularjs;
+	
+	opens com.jwebmp.plugins.angularscrollposition to com.jwebmp.core;
 
 	provides com.jwebmp.core.services.IPageConfigurator with com.jwebmp.plugins.angularscrollposition.AngularScrollPositionPageConfigurator;
 	provides com.jwebmp.core.base.angular.services.IAngularDirective with com.jwebmp.plugins.angularscrollposition.AngularScrollPositionDirective;

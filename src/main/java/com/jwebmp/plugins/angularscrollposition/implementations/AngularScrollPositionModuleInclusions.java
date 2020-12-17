@@ -12,7 +12,7 @@ public class AngularScrollPositionModuleInclusions implements IGuiceScanModuleIn
 	public @NotNull Set<String> includeModules()
 	{
 		Set<String> set = new HashSet<>();
-		//set.add("com.jwebmp.plugins.angularscrollposition");
+		set.add("com.jwebmp.plugins.angularscrollposition");
 		return set;
 	}
 }
