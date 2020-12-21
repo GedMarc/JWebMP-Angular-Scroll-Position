@@ -33,7 +33,7 @@ import jakarta.validation.constraints.NotNull;
  * @author GedMarc
  * @since 16 Jun 2017
  */
-@PluginInformation(pluginName = "Angular Scroll Position",
+@PluginInformation(pluginName = "Scroll Position",
 		pluginDescription = "A simple scroll directive to track and change ng-repeat index/id on scroll. This works great with GoogleMaps or any other set of data you want to track with. It uses angular-scroll and angular.",
 		pluginUniqueName = "angular-scroll-position",
 		pluginVersion = "1.0.0",
